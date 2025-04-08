@@ -3,7 +3,7 @@ name: Auto KeySubtracter Loop
 on:
  workflow_dispatch:
  schedule:
-   - cron: "*/1 * * * *"  # हर 3 मिनट में run
+   - cron: "50 */6 * * *"  # Runs every 5 hours 50 minutes
   
 jobs:
   build:
