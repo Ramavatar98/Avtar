@@ -1,9 +1,9 @@
 name: Auto-Incrementing Keysubtracter Workflow
 
 on:
+workflow_dispatch:
   schedule:
     - cron: '0 * * * *'  # हर घंटे चलाएँ
-  workflow_dispatch:
 
 jobs:
   keysubtracter_job:
