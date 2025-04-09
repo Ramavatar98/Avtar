@@ -39,7 +39,12 @@ jobs:
     - name: Run Python Script
       run: |
         cd keysubtrac
-        python3 Run.py
+        timeout 20990 python3 Run.py
+        
+    - name: show file
+      run: |
+        cd keysubtrac
+        cat np.txt   
         
     - name: show file
       run: |
