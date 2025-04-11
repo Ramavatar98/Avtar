@@ -45,7 +45,7 @@ jobs:
     - name: show file
       run: |
         cd keysubtrac
-        cat np.txt   
+        cat np.txt || ecco: no such file
         
     - name: show file
       run: |
